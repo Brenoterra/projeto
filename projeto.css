@@ -47,18 +47,12 @@ select {
   padding: 10px;
 }
 
-.foto {
-  float: left;
-  margin-bottom: 20px;
-}
-
-.logo {
-  width: 190px;
-  height: 180px;
-}
-
 .containerLogo {
   background-color: rgba(0, 0, 0, 0.219);
   height: 180px;
   width: 100%;
+}
+.containerLogo .logo {
+  width: 190px;
+  height: 180px;
 }
