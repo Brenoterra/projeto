@@ -1,105 +1,95 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ficha de cadastro</title>
-    <link rel="stylesheet" href="projeto.css">
-    
-    <style> 
+    <link rel="stylesheet" href="projeto.css" />
+  </head>
+  <body>
+    <div class="containerLogo">
+      <img class="logo" src="logo5.jpg" alt="" />
+    </div>
 
-        
-    </style>
-</head>
-<body>
-    <div class="divlogo">
-    <img class="logo" src="logo5.jpg" alt="">
-   </div>
-    
-        <div class="a">
-    <h2>Ficha de cadastro</h2>
-    <table>
- 
-    <form action="cadastro" method="get">
-                
-        <div> 
-            <label >
-                 Nome <br>
-                    <input type="text"  class="nome"  size="81">
-            </label>
+    <div class="containerTitle">
+      <h2>Ficha de cadastro</h2>
+    </div>
+    <form class="form" action="cadastro" method="get">
+      <div class="containerInput">
+        <label>Nome</label>
+        <input type="text" class="nome" size="81" />
+      </div>
+      <div class="containerInput">
+        <label>Email</label>
+        <input type="email" name="Email" aria-required="true" size="81" />
+      </div>
+      <div class="containerFlex">
+        <div class="containerInput">
+          <label>CPF</label>
+          <input
+            required
+            type="tel"
+            name="CPF"
+            minlength="11"
+            aria-required="true"
+            placeholder="123.456.789-12"
+          />
         </div>
-        <div>
-            <label >
-                Email <br>
-                   <input type="email" name="Email" aria-required="true" size="81">
-            </label>
+        <div class="containerInput">
+          <label>Celular</label>
+          <input
+            type="tel"
+            name="tel"
+            aria-required="true"
+            required
+            minlength="11"
+            placeholder="(11)987654321"
+          />
         </div>
-            
-        <div class="b">
-            <label class="CPF" >
-                CPF<br>
-                <input type="tel" name="CPF" aria-required="true" required minlength="11" placeholder="123.456.789-12" class="area">
-            </label>
-        </div>   
-        <div class="c">  
-            <label class="cell">
-                Celular <br>
-                   <input type="tel" name="tel" aria-required="true" required minlength="11" placeholder="(11)987654321" class="area">
-            </label>    
-        </div> 
-        
-        <div class="Data">    
-            <label >
-                Data de nascimento <br>
-                    <input type="date" size="11" class="area">
-            </label>
-        </div>      
-        
-        <div class="estados">
-            <label >
-                Estado <br>
-                <select name="estados" id="" class="area">
-                    
-                <option selected   aria-required="false" value="rj">selecione</option></option>
-                <option value="sp">SP1</option>
-                <option value="sp">SP2</option>
-                <option value="sp">SP3</option>
-                </select>   
-            </label>
-        </div> 
-        <div class="cidade"> 
-            <label >
-                Cidade <br>
-                <select name="cidade" id="" class="area">
-                                                   /*---------- nao consegui aplicar a tag placeholder ------------ */ 
-                <option value="Rio de janeiro">Rio de janeiro</option>
-                <option value="Niteroi">Niteroi</option>
-                </select>
-            </label>
-        </div>        
-        <div class="foto">       
-            <label for="foto">
-                 Foto: <br>
-                <input type="file" accept="image/*">
-            </label>
-        </div>        
-        <div class="z">
-            <label >
-                Conte nos um pouco sobre suas experiencias
-                <br>
-                <textarea name="descrição" id="" cols="30" rows="10" ></textarea>
-            </label>
-        </div>   
+      </div>
+      <div class="containerFlex">
+        <div class="containerInput">
+          <label>Data de nascimento</label>
+          <input type="date" size="11" />
+        </div>
+        <div class="containerInput">
+          <label>Estado</label>
+          <select name="estados" id="">
+            <option selected aria-required="false" value="selecione">
+              selecione
+            </option>
+            <option value="sp">SP1</option>
+            <option value="sp">SP2</option>
+            <option value="sp">SP3</option>
+          </select>
+        </div>
+      </div>
+      <div class="containerFlex">
+        <div class="containerInput">
+          <label>Cidade</label>
+          <select name="cidade" id="">
+            <option selected aria-required="false" value="selecione">
+              selecione
+            </option>
+            <option value="Rio de janeiro">Rio de janeiro</option>
+            <option value="Niteroi">Niteroi</option>
+          </select>
+        </div>
+        <div class="containerInput foto">
+          <label>Foto</label>
+          <input type="file" accept="image/*" />
+        </div>
+      </div>
+      <div class="containerInput">
+        <label>Conte nos um pouco sobre suas experiencias</label>
+        <textarea name="descrição" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="containerFlex">
+        <input type="checkbox" />
+        <a href="termos.html" target="_blank"> Declaro que aceito os termos </a>
+      </div>
 
-            <label >
-                <input type="checkbox"><a href="termos.html" target="_blank"> Declaro que aceito os termos </a>
-            </label>
-                 
-            <button  >Finalizar cadastro</button> 
-         </form>     
-        </table>
-      
-
-</body>
+      <button class="submit">Finalizar cadastro</button>
+    </form>
+  </body>
 </html>
- 
